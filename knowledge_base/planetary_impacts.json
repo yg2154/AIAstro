@@ -1,0 +1,101 @@
+{
+  "Sun": {
+    "Sanskrit": "Surya",
+    "rules": "Leo",
+    "exalted_in": "Aries",
+    "debilitated_in": "Libra",
+    "natural_significations": ["soul", "ego", "vitality", "father", "authority", "government"],
+    "positive_transit": "Boosts confidence, leadership opportunities, recognition, and career advancement. A strong Sun transit empowers your core identity.",
+    "challenging_transit": "Ego clashes, health issues related to heart and eyes, conflicts with authority figures.",
+    "career_guidance": "Sun strengthens careers in government, administration, politics, medicine, and any leadership role. Sun's period (Mahadasha) often brings recognition and promotion.",
+    "spiritual_guidance": "Surya is the Atma-karaka—the significator of the soul. Solar practices include Surya Namaskar, Gayatri mantra recitation at sunrise, and service to elders."
+  },
+  "Moon": {
+    "Sanskrit": "Chandra",
+    "rules": "Cancer",
+    "exalted_in": "Taurus",
+    "debilitated_in": "Scorpio",
+    "natural_significations": ["mind", "emotions", "mother", "home", "intuition", "public"],
+    "positive_transit": "Enhanced intuition, emotional harmony, public popularity, and domestic happiness.",
+    "challenging_transit": "Emotional instability, anxiety, relationship with mother strained, sleep disturbances.",
+    "career_guidance": "Moon favors careers in healthcare, hospitality, food industry, public relations, and creative arts. The mind's strength determines vocational focus.",
+    "spiritual_guidance": "Chandra governs the mind. Meditation, chanting 'Om Chandraya Namah', fasting on Mondays, and offering water to the Moon during Purnima strengthen lunar energy."
+  },
+  "Mars": {
+    "Sanskrit": "Mangal/Kuja",
+    "rules": ["Aries", "Scorpio"],
+    "exalted_in": "Capricorn",
+    "debilitated_in": "Cancer",
+    "natural_significations": ["energy", "courage", "siblings", "property", "ambition", "aggression"],
+    "positive_transit": "Physical energy surge, competitive success, courage to initiate projects, property gains.",
+    "challenging_transit": "Accidents, conflicts, inflammatory health issues, impulsive decisions.",
+    "career_guidance": "Mars empowers careers in military, police, surgery, engineering, sports, and entrepreneurship. Mars Mahadasha activates ambition and willingness to fight for success.",
+    "spiritual_guidance": "Mangal's fire purifies through discipline. Physical sadhana—yoga, martial arts, fasting on Tuesdays—channels Mars energy constructively."
+  },
+  "Mercury": {
+    "Sanskrit": "Budha",
+    "rules": ["Gemini", "Virgo"],
+    "exalted_in": "Virgo",
+    "debilitated_in": "Pisces",
+    "natural_significations": ["intellect", "communication", "business", "analysis", "siblings", "education"],
+    "positive_transit": "Sharp intellect, excellent communication, business success, learning acceleration.",
+    "challenging_transit": "Communication errors, contracts going wrong, nervous system issues, misunderstandings.",
+    "career_guidance": "Mercury rules careers in writing, technology, trading, accounting, education, and consulting. A strong Mercury in the chart is the hallmark of intellectual and commercial success.",
+    "spiritual_guidance": "Budha is the planet of discrimination (viveka). Study of scriptures, mantras, and analytical meditation practices strengthen Mercury."
+  },
+  "Jupiter": {
+    "Sanskrit": "Guru/Brihaspati",
+    "rules": ["Sagittarius", "Pisces"],
+    "exalted_in": "Cancer",
+    "debilitated_in": "Capricorn",
+    "natural_significations": ["wisdom", "dharma", "wealth", "children", "teacher", "expansion"],
+    "positive_transit": "Expansion of opportunities, wisdom, spiritual growth, financial gains, marriage for those of age.",
+    "challenging_transit": "Overindulgence, excess, liver and metabolism issues, legal complications.",
+    "career_guidance": "Jupiter blesses careers in education, law, religion, finance, counseling, and international business. Jupiter transiting the 10th house often brings significant career advancement.",
+    "spiritual_guidance": "Guru is the divine teacher within. Jupiter is strengthened by study, teaching, honoring elders and gurus, and offering yellow flowers or bananas on Thursdays."
+  },
+  "Venus": {
+    "Sanskrit": "Shukra",
+    "rules": ["Taurus", "Libra"],
+    "exalted_in": "Pisces",
+    "debilitated_in": "Virgo",
+    "natural_significations": ["love", "beauty", "luxury", "relationships", "arts", "vehicles"],
+    "positive_transit": "Romantic opportunities, artistic inspiration, luxury, financial gains, harmonious relationships.",
+    "challenging_transit": "Relationship conflicts, financial overspending, reproductive health issues.",
+    "career_guidance": "Venus governs careers in arts, fashion, beauty, hospitality, luxury goods, and entertainment. Venus Mahadasha often brings material abundance and creative flourishing.",
+    "spiritual_guidance": "Shukra's higher expression is unconditional love and beauty as devotion. Bhakti yoga, service to women and artists, and aesthetic spiritual practice honor Venus."
+  },
+  "Saturn": {
+    "Sanskrit": "Shani",
+    "rules": ["Capricorn", "Aquarius"],
+    "exalted_in": "Libra",
+    "debilitated_in": "Aries",
+    "natural_significations": ["discipline", "karma", "limitations", "service", "longevity", "elderly"],
+    "positive_transit": "Structured growth, lasting achievements, discipline, karmic rewards for past good actions.",
+    "challenging_transit": "Delays, obstacles, chronic health issues, depression, and burdensome responsibilities—especially during Sade Sati (7.5-year period).",
+    "career_guidance": "Saturn rewards patience and hard work in careers involving service, real estate, mining, labor, government, and research. Shani's lessons are difficult but the rewards are enduring.",
+    "spiritual_guidance": "Saturn teaches detachment and karma. Seva (selfless service), fasting on Saturdays, visiting temples, and offering oil to Shani strengthen this planet's energy."
+  },
+  "Rahu": {
+    "Sanskrit": "Rahu",
+    "rules": "North Node (shadow planet)",
+    "exalted_in": "Taurus/Gemini",
+    "debilitated_in": "Scorpio/Sagittarius",
+    "natural_significations": ["worldly desires", "foreign travel", "technology", "illusion", "ambition", "innovation"],
+    "positive_transit": "Material success, fame, foreign connections, technological innovation, unconventional achievements.",
+    "challenging_transit": "Confusion, illusion, addictions, unexpected disruptions, and karmic intensification.",
+    "career_guidance": "Rahu is the great amplifier. It supercharges careers in technology, media, research, politics, and anything foreign or unconventional. Rahu Mahadasha can bring sudden fame.",
+    "spiritual_guidance": "Rahu's shadow dissolves through spiritual practice and detachment from worldly cravings. Durga puja, Rahu mantras, and meditation on the illusory nature of desire help balance Rahu."
+  },
+  "Ketu": {
+    "Sanskrit": "Ketu",
+    "rules": "South Node (shadow planet)",
+    "exalted_in": "Scorpio/Sagittarius",
+    "debilitated_in": "Taurus/Gemini",
+    "natural_significations": ["spirituality", "liberation", "past lives", "occult", "detachment", "enlightenment"],
+    "positive_transit": "Spiritual insights, psychic abilities, liberation from material concerns, mastery of occult sciences.",
+    "challenging_transit": "Sense of purposelessness, mysterious health issues, disconnection from worldly affairs.",
+    "career_guidance": "Ketu favors careers in spirituality, research, medicine, occult sciences, and technical fields. Its influence often points to past-life mastery in specific domains.",
+    "spiritual_guidance": "Ketu is the moksha-karaka—the significator of liberation. Meditation, solitude, study of Vedanta, and Ganesha worship help integrate Ketu's energy."
+  }
+}

@@ -1,0 +1,134 @@
+{
+  "Aries": {
+    "element": "Fire",
+    "ruling_planet": "Mars",
+    "traits": ["courageous", "energetic", "pioneering", "impulsive", "competitive"],
+    "strengths": "Natural leaders with boundless energy and the courage to take initiative. Aries thrive in dynamic environments where they can forge new paths.",
+    "weaknesses": "Tendency toward impatience and impulsive decisions. Can become aggressive when challenged.",
+    "career": "Aries excel in entrepreneurship, military, sports, surgery, and any field requiring decisive action and leadership.",
+    "love": "Passionate and direct in love. Aries seek an equally energetic partner who can match their enthusiasm. They value independence even in relationships.",
+    "spiritual": "Aries' spiritual path involves learning patience and tempering aggression with wisdom. Mars energy channels well into active meditation and martial arts.",
+    "compatibility": ["Leo", "Sagittarius", "Gemini", "Aquarius"]
+  },
+  "Taurus": {
+    "element": "Earth",
+    "ruling_planet": "Venus",
+    "traits": ["reliable", "patient", "practical", "devoted", "stubborn"],
+    "strengths": "Highly dependable and hardworking. Taurus builds lasting foundations and appreciates beauty, comfort, and material security.",
+    "weaknesses": "Resistance to change and possessiveness. Can be overly materialistic.",
+    "career": "Taurus thrives in banking, real estate, agriculture, art, music, and culinary arts. They excel in roles requiring patience and attention to detail.",
+    "love": "Deeply loyal and sensual in relationships. Taurus seeks stability and long-term commitment. Physical affection is important to them.",
+    "spiritual": "Venus guides Taurus toward beauty as a spiritual path. Nature, gardening, and mindful craftsmanship are powerful spiritual practices.",
+    "compatibility": ["Virgo", "Capricorn", "Cancer", "Pisces"]
+  },
+  "Gemini": {
+    "element": "Air",
+    "ruling_planet": "Mercury",
+    "traits": ["adaptable", "communicative", "curious", "witty", "inconsistent"],
+    "strengths": "Brilliant communicators with quick minds and adaptability. Gemini can synthesize diverse ideas and connect with many different people.",
+    "weaknesses": "Can be indecisive and inconsistent. Prone to superficiality when interests shift rapidly.",
+    "career": "Gemini excels in journalism, writing, teaching, sales, diplomacy, and technology. Any role requiring communication and mental agility suits them.",
+    "love": "Needs mental stimulation in relationships. Gemini is playful and romantic but requires a partner who can keep up intellectually.",
+    "spiritual": "Mercury rules the mind; Gemini's spiritual growth comes through stillness practices that quiet the chattering mind—meditation, journaling, and contemplative reading.",
+    "compatibility": ["Libra", "Aquarius", "Aries", "Leo"]
+  },
+  "Cancer": {
+    "element": "Water",
+    "ruling_planet": "Moon",
+    "traits": ["intuitive", "nurturing", "protective", "emotional", "moody"],
+    "strengths": "Deeply empathetic and nurturing. Cancer creates warm, supportive environments and has strong intuitive abilities.",
+    "weaknesses": "Emotional sensitivity can lead to moodiness. Can become clingy or overly protective.",
+    "career": "Cancer excels in healthcare, social work, teaching, hospitality, real estate, and culinary arts—anywhere they can nurture and protect.",
+    "love": "Cancer is a devoted, romantic partner who invests deeply in relationships. They need security and emotional honesty from a partner.",
+    "spiritual": "Ruled by the Moon, Cancer's spiritual path involves honoring emotional cycles, ancestral connections, and the divine feminine.",
+    "compatibility": ["Scorpio", "Pisces", "Taurus", "Virgo"]
+  },
+  "Leo": {
+    "element": "Fire",
+    "ruling_planet": "Sun",
+    "traits": ["generous", "confident", "creative", "dramatic", "loyal"],
+    "strengths": "Natural charisma and leadership. Leo inspires others with creativity and warmth, and is genuinely generous-hearted.",
+    "weaknesses": "Pride and need for admiration can become problematic. Can be domineering.",
+    "career": "Leo thrives in entertainment, politics, management, education, and creative fields. They excel where they can lead and be seen.",
+    "love": "Dramatic and passionate in love. Leo showers partners with affection and loyalty, expecting appreciation in return.",
+    "spiritual": "The Sun's energy directs Leo toward heart-centered spirituality—service, creativity as devotion, and practices that radiate outward.",
+    "compatibility": ["Aries", "Sagittarius", "Gemini", "Libra"]
+  },
+  "Virgo": {
+    "element": "Earth",
+    "ruling_planet": "Mercury",
+    "traits": ["analytical", "meticulous", "helpful", "practical", "critical"],
+    "strengths": "Outstanding analytical skills and attention to detail. Virgo is hardworking, reliable, and genuinely motivated to be of service.",
+    "weaknesses": "Perfectionism and overcritical tendencies. Can worry excessively.",
+    "career": "Virgo excels in medicine, research, data analysis, writing, accounting, and health-related fields. They flourish in roles demanding precision.",
+    "love": "Devoted and attentive partner. Virgo shows love through acts of service and practical support rather than grand gestures.",
+    "spiritual": "Mercury's analytical energy serves Virgo through practices of discernment—yoga, Ayurveda, mindful service, and study of sacred texts.",
+    "compatibility": ["Taurus", "Capricorn", "Cancer", "Scorpio"]
+  },
+  "Libra": {
+    "element": "Air",
+    "ruling_planet": "Venus",
+    "traits": ["diplomatic", "fair-minded", "social", "idealistic", "indecisive"],
+    "strengths": "Natural diplomats with a strong sense of justice and beauty. Libra creates harmony and builds bridges between opposing viewpoints.",
+    "weaknesses": "Indecisiveness and people-pleasing. Can avoid necessary conflict.",
+    "career": "Libra thrives in law, diplomacy, design, human resources, counseling, and the arts—wherever balance and aesthetic judgment are valued.",
+    "love": "Partnership is central to Libra's identity. They are romantic, attentive, and committed to creating a harmonious, beautiful relationship.",
+    "spiritual": "Venus guides Libra toward beauty as a vehicle for the divine. Art, music, and the pursuit of justice are spiritual callings.",
+    "compatibility": ["Gemini", "Aquarius", "Leo", "Sagittarius"]
+  },
+  "Scorpio": {
+    "element": "Water",
+    "ruling_planet": "Mars/Pluto",
+    "traits": ["intense", "passionate", "resourceful", "determined", "secretive"],
+    "strengths": "Extraordinary depth, determination, and transformative power. Scorpio investigates beneath the surface and emerges stronger from challenges.",
+    "weaknesses": "Jealousy and the desire for control. Can be manipulative when feeling threatened.",
+    "career": "Scorpio excels in psychology, research, investigation, surgery, finance, and occult sciences. Mars and Pluto give them intensity and stamina.",
+    "love": "Intensely loyal and passionate. Scorpio seeks deep emotional merger and will not tolerate superficiality or betrayal.",
+    "spiritual": "Pluto rules transformation; Scorpio's path involves death-and-rebirth cycles, shadow work, and practices like Tantra or deep meditation.",
+    "compatibility": ["Cancer", "Pisces", "Virgo", "Capricorn"]
+  },
+  "Sagittarius": {
+    "element": "Fire",
+    "ruling_planet": "Jupiter",
+    "traits": ["optimistic", "adventurous", "philosophical", "independent", "blunt"],
+    "strengths": "Expansive vision and philosophical depth. Sagittarius pursues truth with enthusiasm and inspires others with optimism.",
+    "weaknesses": "Tactlessness and restlessness. Can be irresponsible when freedom feels restricted.",
+    "career": "Sagittarius thrives in academia, law, travel, publishing, philosophy, sports, and international business. Jupiter expands their reach.",
+    "love": "Adventurous and honest in love. Sagittarius needs a partner who respects independence and shares a love of growth and exploration.",
+    "spiritual": "Jupiter's wisdom makes Sagittarius natural seekers. Philosophy, world religions, pilgrimage, and teaching are their spiritual domains.",
+    "compatibility": ["Aries", "Leo", "Libra", "Aquarius"]
+  },
+  "Capricorn": {
+    "element": "Earth",
+    "ruling_planet": "Saturn",
+    "traits": ["disciplined", "ambitious", "responsible", "patient", "reserved"],
+    "strengths": "Exceptional discipline, long-term vision, and capacity for sustained effort. Capricorn builds lasting structures and achieves ambitious goals.",
+    "weaknesses": "Can be overly rigid, pessimistic, or workaholic. May suppress emotions.",
+    "career": "Capricorn excels in business, government, engineering, finance, and executive roles. Saturn rewards their patience with lasting achievement.",
+    "love": "Steadfast and loyal partner who takes commitment seriously. Capricorn shows love through reliability and material provision.",
+    "spiritual": "Saturn disciplines Capricorn toward structured spiritual practice—traditional meditation, karma yoga, and honoring ancestral wisdom.",
+    "compatibility": ["Taurus", "Virgo", "Scorpio", "Pisces"]
+  },
+  "Aquarius": {
+    "element": "Air",
+    "ruling_planet": "Saturn/Uranus",
+    "traits": ["innovative", "humanitarian", "independent", "intellectual", "detached"],
+    "strengths": "Visionary thinking and genuine humanitarian concern. Aquarius pioneers new ideas and works tirelessly for collective progress.",
+    "weaknesses": "Emotional detachment and rebelliousness. Can be dogmatic about their unconventional views.",
+    "career": "Aquarius thrives in technology, science, social reform, aviation, astrology, and any field at the frontier of human progress.",
+    "love": "Values intellectual connection and shared ideals. Aquarius needs a partner who respects independence and shares their vision for a better world.",
+    "spiritual": "Uranus awakens; Aquarius finds spirituality in collective consciousness, energy healing, and practices that transcend individual ego.",
+    "compatibility": ["Gemini", "Libra", "Sagittarius", "Aries"]
+  },
+  "Pisces": {
+    "element": "Water",
+    "ruling_planet": "Jupiter/Neptune",
+    "traits": ["compassionate", "intuitive", "artistic", "gentle", "self-sacrificing"],
+    "strengths": "Deep compassion and artistic sensitivity. Pisces transcends ordinary reality through imagination, empathy, and spiritual attunement.",
+    "weaknesses": "Can be overly escapist, self-sacrificing to the point of self-harm, or easily deceived.",
+    "career": "Pisces excels in arts, music, healing, psychology, spirituality, and any role where imagination and empathy are assets.",
+    "love": "Utterly romantic and devoted. Pisces gives selflessly in love and seeks a soulmate connection that transcends the mundane.",
+    "spiritual": "Neptune dissolves boundaries; Pisces naturally inclines toward meditation, devotion (bhakti), dream work, and mystical practices.",
+    "compatibility": ["Cancer", "Scorpio", "Capricorn", "Taurus"]
+  }
+}

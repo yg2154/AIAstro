@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: mynaksh
+    runtime: docker
+    dockerfilePath: ./Dockerfile
+    plan: free
+    envVars:
+      - key: OPENAI_API_KEY
+        sync: false          # Set manually in Render dashboard
+      - key: APP_ENV
+        value: production
+      - key: LOG_LEVEL
+        value: INFO
+    healthCheckPath: /health
+    autoDeploy: true
