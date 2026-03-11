@@ -15,8 +15,7 @@ class Settings(BaseSettings):
     session_enable_summarization: bool = False
 
     # RAG
-    rag_similarity_threshold: float = 0.35
-    embedding_model: str = "sentence-transformers/all-MiniLM-L6-v2"
+    rag_similarity_threshold: float = 0.07
 
     # App
     app_env: str = "production"

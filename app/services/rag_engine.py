@@ -1,6 +1,5 @@
 import json
 import logging
-import os
 from pathlib import Path
 from typing import List, Tuple
 
@@ -12,77 +11,55 @@ KNOWLEDGE_BASE_DIR = Path(__file__).parent.parent.parent / "knowledge_base"
 
 
 class RAGEngine:
-    def __init__(self, similarity_threshold: float = 0.35, embedding_model: str = "sentence-transformers/all-MiniLM-L6-v2"):
+    def __init__(self, similarity_threshold: float = 0.35, embedding_model: str = ""):
         self.similarity_threshold = similarity_threshold
-        self.embedding_model_name = embedding_model
-        self._model = None
-        self._index = None
+        self._vectorizer = None
+        self._tfidf_matrix = None
         self._chunks: List[str] = []
         self._chunk_metadata: List[dict] = []
 
-    def _get_model(self):
-        if self._model is None:
-            from sentence_transformers import SentenceTransformer
-            self._model = SentenceTransformer(self.embedding_model_name)
-        return self._model
-
     def build_index(self) -> None:
-        """Load knowledge base files, chunk them, encode, and build FAISS index."""
-        import faiss
+        """Load knowledge base files, chunk them, and build TF-IDF index."""
+        from sklearn.feature_extraction.text import TfidfVectorizer
 
         chunks, metadata = self._load_all_documents()
         self._chunks = chunks
         self._chunk_metadata = metadata
 
-        logger.info("Encoding %d chunks with %s", len(chunks), self.embedding_model_name)
-        model = self._get_model()
-        embeddings = model.encode(chunks, show_progress_bar=False, convert_to_numpy=True)
-
-        # L2-normalize for cosine similarity via inner product
-        norms = np.linalg.norm(embeddings, axis=1, keepdims=True)
-        norms = np.where(norms == 0, 1, norms)
-        embeddings = (embeddings / norms).astype(np.float32)
-
-        dim = embeddings.shape[1]
-        self._index = faiss.IndexFlatIP(dim)
-        self._index.add(embeddings)
-        logger.info("FAISS index built with %d vectors (dim=%d)", self._index.ntotal, dim)
+        logger.info("Building TF-IDF index over %d chunks", len(chunks))
+        self._vectorizer = TfidfVectorizer(
+            ngram_range=(1, 2),
+            max_features=8000,
+            sublinear_tf=True,
+        )
+        self._tfidf_matrix = self._vectorizer.fit_transform(chunks)
+        logger.info("TF-IDF index built (%d chunks, %d features)", len(chunks), self._tfidf_matrix.shape[1])
 
     def retrieve(self, query: str, zodiac: str = None, top_k: int = 5) -> Tuple[List[str], bool]:
         """Return (relevant_chunks, retrieval_used)."""
-        if self._index is None or len(self._chunks) == 0:
+        if self._tfidf_matrix is None or len(self._chunks) == 0:
             return [], False
 
-        model = self._get_model()
-        query_emb = model.encode([query], show_progress_bar=False, convert_to_numpy=True)
-        norm = np.linalg.norm(query_emb)
-        if norm > 0:
-            query_emb = query_emb / norm
-        query_emb = query_emb.astype(np.float32)
+        from sklearn.metrics.pairwise import cosine_similarity
 
-        k = min(top_k * 2, self._index.ntotal)
-        scores, indices = self._index.search(query_emb, k)
+        query_vec = self._vectorizer.transform([query])
+        scores = cosine_similarity(query_vec, self._tfidf_matrix)[0]
 
-        scores = scores[0]
-        indices = indices[0]
-
-        if len(scores) == 0 or scores[0] < self.similarity_threshold:
+        if scores.max() < self.similarity_threshold:
             return [], False
 
         # Zodiac boost: +0.1 to chunks mentioning the zodiac sign
-        boosted = []
-        for score, idx in zip(scores, indices):
-            if idx < 0:
-                continue
-            chunk_score = float(score)
-            if zodiac and zodiac.lower() in self._chunks[idx].lower():
-                chunk_score += 0.1
-            boosted.append((chunk_score, idx))
+        if zodiac:
+            for i, chunk in enumerate(self._chunks):
+                if zodiac.lower() in chunk.lower():
+                    scores[i] += 0.1
 
-        boosted.sort(key=lambda x: x[0], reverse=True)
-        top = boosted[:top_k]
+        top_indices = scores.argsort()[::-1][:top_k]
+        result_chunks = [
+            self._chunks[i] for i in top_indices
+            if scores[i] >= self.similarity_threshold
+        ]
 
-        result_chunks = [self._chunks[idx] for _, idx in top if float(_) >= self.similarity_threshold]
         if not result_chunks:
             return [], False
 
@@ -90,7 +67,7 @@ class RAGEngine:
 
     @property
     def is_ready(self) -> bool:
-        return self._index is not None and self._index.ntotal > 0
+        return self._tfidf_matrix is not None and len(self._chunks) > 0
 
     # ---- Document loading & chunking ----------------------------------------
 
@@ -167,7 +144,6 @@ class RAGEngine:
     def _chunk_txt(self, path: Path) -> Tuple[List[str], List[dict]]:
         with open(path) as f:
             content = f.read()
-        # Split on double newlines, keep chunks ≥50 chars
         raw_chunks = [c.strip() for c in content.split("\n\n") if len(c.strip()) >= 50]
         meta = [{"source": path.name}] * len(raw_chunks)
         return raw_chunks, meta
@@ -184,6 +160,5 @@ def get_rag_engine() -> RAGEngine:
         settings = get_settings()
         _rag_engine = RAGEngine(
             similarity_threshold=settings.rag_similarity_threshold,
-            embedding_model=settings.embedding_model,
         )
     return _rag_engine

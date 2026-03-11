@@ -4,7 +4,7 @@ from app.services.rag_engine import RAGEngine
 
 @pytest.fixture(scope="module")
 def rag():
-    engine = RAGEngine(similarity_threshold=0.35)
+    engine = RAGEngine(similarity_threshold=0.07)
     engine.build_index()
     return engine
 
