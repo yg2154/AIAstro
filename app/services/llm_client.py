@@ -434,7 +434,8 @@ class StubLLMClient(BaseLLMClient):
 
     async def complete(self, messages: List[dict]) -> str:
         system = next((m["content"] for m in messages if m["role"] == "system"), "")
-        user_msg = next((m["content"] for m in messages if m["role"] == "user"), "")
+        # Use the LAST user message (current turn), not the first (history)
+        user_msg = next((m["content"] for m in reversed(messages) if m["role"] == "user"), "")
         language = "hi" if "हिंदी" in system or "Devanagari" in system else "en"
 
         # Extract zodiac from system prompt — look for the specific marker line
